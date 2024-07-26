@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>newEngine.head</file>
+        <file>translations/zh_CN.qm</file>
+    </qresource>
+</RCC>
