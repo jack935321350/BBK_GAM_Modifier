@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>789</width>
+    <width>795</width>
     <height>592</height>
    </rect>
   </property>
@@ -15,11 +15,19 @@
     <family>Consolas</family>
    </font>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox{ color: rgb(0, 0, 150); }</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,1">
    <item>
     <layout class="QHBoxLayout" name="topBtnLayout">
      <item>
       <widget class="QPushButton" name="loadGamBtn">
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+        </font>
+       </property>
        <property name="text">
         <string>Load Gam</string>
        </property>
@@ -27,6 +35,11 @@
      </item>
      <item>
       <widget class="QPushButton" name="replaceNewEngine">
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+        </font>
+       </property>
        <property name="text">
         <string>Replace New Engine</string>
        </property>
@@ -34,6 +47,11 @@
      </item>
      <item>
       <widget class="QPushButton" name="allPlayer999Btn">
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+        </font>
+       </property>
        <property name="text">
         <string>All Player 999</string>
        </property>
@@ -41,6 +59,11 @@
      </item>
      <item>
       <widget class="QPushButton" name="saveGamBtn">
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+        </font>
+       </property>
        <property name="text">
         <string>Save Gam</string>
        </property>
@@ -50,12 +73,22 @@
    </item>
    <item>
     <widget class="QGroupBox" name="playerBox">
+     <property name="font">
+      <font>
+       <family>Consolas</family>
+      </font>
+     </property>
      <property name="title">
       <string>Player</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="5">
        <widget class="QSpinBox" name="playerAttackPower">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -69,6 +102,11 @@
       </item>
       <item row="0" column="8">
        <widget class="QLabel" name="playerBodyMovementLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Body Movement:</string>
         </property>
@@ -79,6 +117,11 @@
       </item>
       <item row="6" column="3">
        <widget class="QSpinBox" name="playerAccessory1">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -89,6 +132,11 @@
       </item>
       <item row="0" column="3">
        <widget class="QSpinBox" name="playerHat">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -99,6 +147,11 @@
       </item>
       <item row="1" column="4">
        <widget class="QLabel" name="playerDefensePowerLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Defense Power:</string>
         </property>
@@ -109,6 +162,11 @@
       </item>
       <item row="6" column="2">
        <widget class="QLabel" name="playerAccessory1Lbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Accessory1:</string>
         </property>
@@ -119,6 +177,11 @@
       </item>
       <item row="5" column="3">
        <widget class="QSpinBox" name="playerShoes">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -129,6 +192,11 @@
       </item>
       <item row="0" column="4">
        <widget class="QLabel" name="playerAttackPowerLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Attack Power:</string>
         </property>
@@ -139,6 +207,11 @@
       </item>
       <item row="0" column="1">
        <widget class="QSpinBox" name="playerIdx">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -149,6 +222,11 @@
       </item>
       <item row="1" column="2">
        <widget class="QLabel" name="playerClothesLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Clothes:</string>
         </property>
@@ -159,6 +237,11 @@
       </item>
       <item row="2" column="3">
        <widget class="QSpinBox" name="playerCloak">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -169,6 +252,11 @@
       </item>
       <item row="0" column="9">
        <widget class="QSpinBox" name="playerBodyMovement">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -179,6 +267,11 @@
       </item>
       <item row="4" column="3">
        <widget class="QSpinBox" name="playerWeapon">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -189,6 +282,11 @@
       </item>
       <item row="1" column="3">
        <widget class="QSpinBox" name="playerClothes">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -199,6 +297,11 @@
       </item>
       <item row="3" column="3">
        <widget class="QSpinBox" name="playerWristlet">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -209,6 +312,11 @@
       </item>
       <item row="0" column="0">
        <widget class="QLabel" name="playerIdxLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Index:</string>
         </property>
@@ -219,6 +327,11 @@
       </item>
       <item row="0" column="2">
        <widget class="QLabel" name="playerHatLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Hat:</string>
         </property>
@@ -229,6 +342,11 @@
       </item>
       <item row="5" column="2">
        <widget class="QLabel" name="playerShoesLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Shoes:</string>
         </property>
@@ -239,6 +357,11 @@
       </item>
       <item row="4" column="2">
        <widget class="QLabel" name="playerWeaponLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Weapon:</string>
         </property>
@@ -249,6 +372,11 @@
       </item>
       <item row="2" column="2">
        <widget class="QLabel" name="playerCloakLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Cloak:</string>
         </property>
@@ -259,6 +387,11 @@
       </item>
       <item row="1" column="5">
        <widget class="QSpinBox" name="playerDefensePower">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -272,6 +405,11 @@
       </item>
       <item row="3" column="2">
        <widget class="QLabel" name="playerWristletLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Wristlet:</string>
         </property>
@@ -282,6 +420,11 @@
       </item>
       <item row="7" column="2">
        <widget class="QLabel" name="playerAccessory2Lbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Accessory2:</string>
         </property>
@@ -292,6 +435,11 @@
       </item>
       <item row="7" column="3">
        <widget class="QSpinBox" name="playerAccessory2">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -302,6 +450,11 @@
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="playerNameLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Name:</string>
         </property>
@@ -318,6 +471,11 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -325,6 +483,11 @@
       </item>
       <item row="2" column="4">
        <widget class="QLabel" name="playerHpMaxLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>HP Max:</string>
         </property>
@@ -335,6 +498,11 @@
       </item>
       <item row="2" column="5">
        <widget class="QSpinBox" name="playerHpMax">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -348,6 +516,11 @@
       </item>
       <item row="3" column="4">
        <widget class="QLabel" name="playerHpLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>HP:</string>
         </property>
@@ -358,6 +531,11 @@
       </item>
       <item row="3" column="5">
        <widget class="QSpinBox" name="playerHp">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -371,6 +549,11 @@
       </item>
       <item row="4" column="4">
        <widget class="QLabel" name="playerMpMaxLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>MP Max:</string>
         </property>
@@ -381,6 +564,11 @@
       </item>
       <item row="4" column="5">
        <widget class="QSpinBox" name="playerMpMax">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -394,6 +582,11 @@
       </item>
       <item row="5" column="4">
        <widget class="QLabel" name="playerMpLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>MP:</string>
         </property>
@@ -404,6 +597,11 @@
       </item>
       <item row="5" column="5">
        <widget class="QSpinBox" name="playerMp">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -417,6 +615,11 @@
       </item>
       <item row="1" column="8">
        <widget class="QLabel" name="playerSpiritPowerLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Spirit Power:</string>
         </property>
@@ -427,6 +630,11 @@
       </item>
       <item row="1" column="9">
        <widget class="QSpinBox" name="playerSpiritPower">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -437,6 +645,11 @@
       </item>
       <item row="2" column="8">
        <widget class="QLabel" name="playerLuckyValueLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Lucky Value:</string>
         </property>
@@ -447,6 +660,11 @@
       </item>
       <item row="2" column="9">
        <widget class="QSpinBox" name="playerLuckyValue">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -460,12 +678,22 @@
    </item>
    <item>
     <widget class="QGroupBox" name="propBox">
+     <property name="font">
+      <font>
+       <family>Consolas</family>
+      </font>
+     </property>
      <property name="title">
       <string>Prop</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
       <item row="2" column="5">
        <widget class="QSpinBox" name="propSpiritPower">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -482,6 +710,11 @@
       </item>
       <item row="1" column="7">
        <widget class="QSpinBox" name="propDefensePower">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -498,6 +731,11 @@
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="propIdxLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Index:</string>
         </property>
@@ -508,6 +746,11 @@
       </item>
       <item row="0" column="5">
        <widget class="QSpinBox" name="propMp">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -524,6 +767,11 @@
       </item>
       <item row="2" column="6">
        <widget class="QLabel" name="propLuckyValueLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Lucky Value:</string>
         </property>
@@ -534,12 +782,22 @@
       </item>
       <item row="4" column="0" colspan="8">
        <widget class="QGroupBox" name="propAttrBox">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="title">
          <string>Prop Attribute</string>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
           <widget class="QCheckBox" name="poisonChk">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Poison</string>
            </property>
@@ -547,6 +805,11 @@
          </item>
          <item>
           <widget class="QCheckBox" name="messChk">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Mess</string>
            </property>
@@ -554,6 +817,11 @@
          </item>
          <item>
           <widget class="QCheckBox" name="sealChk">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Seal</string>
            </property>
@@ -561,6 +829,11 @@
          </item>
          <item>
           <widget class="QCheckBox" name="sleepChk">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Sleep</string>
            </property>
@@ -568,6 +841,11 @@
          </item>
          <item>
           <widget class="QCheckBox" name="groupEffectChk">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Group Effect</string>
            </property>
@@ -575,6 +853,11 @@
          </item>
          <item>
           <widget class="QLabel" name="effectiveRoundLbl">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Effective Round:</string>
            </property>
@@ -585,6 +868,11 @@
          </item>
          <item>
           <widget class="QSpinBox" name="effectiveRound">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
            </property>
@@ -601,6 +889,11 @@
       </item>
       <item row="0" column="3">
        <widget class="QSpinBox" name="propHp">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -617,6 +910,11 @@
       </item>
       <item row="1" column="1">
        <widget class="QSpinBox" name="propIdx">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -627,6 +925,11 @@
       </item>
       <item row="1" column="3">
        <widget class="QSpinBox" name="propMpMax">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -643,6 +946,11 @@
       </item>
       <item row="0" column="7">
        <widget class="QSpinBox" name="propHpMax">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -659,6 +967,11 @@
       </item>
       <item row="1" column="6">
        <widget class="QLabel" name="propDefensePowerLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Defense Power:</string>
         </property>
@@ -669,6 +982,11 @@
       </item>
       <item row="0" column="6">
        <widget class="QLabel" name="propHpMaxLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Hp Max:</string>
         </property>
@@ -679,6 +997,11 @@
       </item>
       <item row="2" column="2">
        <widget class="QLabel" name="propBodyMovementLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Body Movement:</string>
         </property>
@@ -689,6 +1012,11 @@
       </item>
       <item row="0" column="4">
        <widget class="QLabel" name="propMpLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Mp:</string>
         </property>
@@ -699,6 +1027,11 @@
       </item>
       <item row="1" column="2">
        <widget class="QLabel" name="propMpMaxLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Mp Max:</string>
         </property>
@@ -709,6 +1042,11 @@
       </item>
       <item row="2" column="7">
        <widget class="QSpinBox" name="propLuckyValue">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -725,6 +1063,11 @@
       </item>
       <item row="0" column="1">
        <widget class="QComboBox" name="propType">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <item>
          <property name="text">
           <string>Hat</string>
@@ -770,6 +1113,11 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -777,6 +1125,11 @@
       </item>
       <item row="2" column="4">
        <widget class="QLabel" name="propSpiritPowerLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Spirit Power:</string>
         </property>
@@ -787,6 +1140,11 @@
       </item>
       <item row="0" column="0">
        <widget class="QLabel" name="propTypeLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Type:</string>
         </property>
@@ -797,6 +1155,11 @@
       </item>
       <item row="1" column="4">
        <widget class="QLabel" name="propAttackPowerLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Attack Power:</string>
         </property>
@@ -807,6 +1170,11 @@
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="propNameLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Prop Name:</string>
         </property>
@@ -817,6 +1185,11 @@
       </item>
       <item row="2" column="3">
        <widget class="QSpinBox" name="propBodyMovement">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -833,6 +1206,11 @@
       </item>
       <item row="1" column="5">
        <widget class="QSpinBox" name="propAttackPower">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -849,6 +1227,11 @@
       </item>
       <item row="0" column="2">
        <widget class="QLabel" name="propHpLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Hp:</string>
         </property>
@@ -859,22 +1242,43 @@
       </item>
       <item row="5" column="0">
        <widget class="QLabel" name="propDescriptionLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Prop Description:</string>
         </property>
        </widget>
       </item>
       <item row="5" column="1" colspan="7">
-       <widget class="QTextEdit" name="propDescription"/>
+       <widget class="QTextEdit" name="propDescription">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
+       </widget>
       </item>
       <item row="3" column="0" colspan="4">
        <widget class="QGroupBox" name="whoCanUseBox">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="title">
          <string>Who Can Use</string>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
           <widget class="QCheckBox" name="player1Chk">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Player 1</string>
            </property>
@@ -882,6 +1286,11 @@
          </item>
          <item>
           <widget class="QCheckBox" name="player2Chk">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Player 2</string>
            </property>
@@ -889,6 +1298,11 @@
          </item>
          <item>
           <widget class="QCheckBox" name="player3Chk">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Player 3</string>
            </property>
@@ -896,6 +1310,11 @@
          </item>
          <item>
           <widget class="QCheckBox" name="player4Chk">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+            </font>
+           </property>
            <property name="text">
             <string>Player 4</string>
            </property>
@@ -906,6 +1325,11 @@
       </item>
       <item row="3" column="7">
        <widget class="QSpinBox" name="propEvent">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -919,6 +1343,11 @@
       </item>
       <item row="3" column="6">
        <widget class="QLabel" name="propEventLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Event:</string>
         </property>
@@ -929,6 +1358,11 @@
       </item>
       <item row="3" column="5">
        <widget class="QSpinBox" name="multiplayerMagic">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
@@ -942,6 +1376,11 @@
       </item>
       <item row="3" column="4">
        <widget class="QLabel" name="multiplayerMagicLbl">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+         </font>
+        </property>
         <property name="text">
          <string>Multiplayer Magic:</string>
         </property>
@@ -995,6 +1434,8 @@
   <tabstop>player2Chk</tabstop>
   <tabstop>player3Chk</tabstop>
   <tabstop>player4Chk</tabstop>
+  <tabstop>multiplayerMagic</tabstop>
+  <tabstop>propEvent</tabstop>
   <tabstop>poisonChk</tabstop>
   <tabstop>messChk</tabstop>
   <tabstop>sealChk</tabstop>

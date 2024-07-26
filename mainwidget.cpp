@@ -10,7 +10,7 @@ MainWidget::MainWidget(QWidget *parent) : QWidget(parent), ui(new Ui::MainWidget
     qApp->installTranslator(&translator);
     ui->retranslateUi(this);
     // adjustSize();
-    resize(560, 594);
+    resize(566, 576);
 
     QFile newEngineFile(":/newEngine.head");
     if(newEngineFile.open(QFile::ReadOnly)) {
@@ -166,7 +166,7 @@ void MainWidget::on_buttons_clicked()
                 propIndex += sizeof(prop_t);
             } while((grsIndex + 0x4000 - propIndex) > sizeof(prop_t));
         }
-        if(!propIndexVec.empty()) {
+        if(!propIndexVec.isEmpty()) {
             propIndexVecVec.append(propIndexVec);
         }
 
@@ -313,23 +313,23 @@ void MainWidget::on_playerData_valueChanged()
     memcpy_s(player->name, 12, playerName.data(), playerName.size());
     player->name[playerName.size()] = '\0';
 
-    player->hat = ui->playerHat->value();
-    player->clothes = ui->playerClothes->value();
-    player->cloak = ui->playerCloak->value();
-    player->wristlet = ui->playerWristlet->value();
-    player->weapon = ui->playerWeapon->value();
-    player->shoes = ui->playerShoes->value();
-    player->accessory1 = ui->playerAccessory1->value();
-    player->accessory2 = ui->playerAccessory2->value();
-    player->attack_power = ui->playerAttackPower->value();
-    player->defense_power = ui->playerDefensePower->value();
-    player->hp_max = ui->playerHpMax->value();
-    player->hp = ui->playerHp->value();
-    player->mp_max = ui->playerMpMax->value();
-    player->mp = ui->playerMp->value();
-    player->body_movement = ui->playerBodyMovement->value();
-    player->spirit_power = ui->playerSpiritPower->value();
-    player->lucky_value = ui->playerLuckyValue->value();
+    player->hat             = ui->playerHat->value();
+    player->clothes         = ui->playerClothes->value();
+    player->cloak           = ui->playerCloak->value();
+    player->wristlet        = ui->playerWristlet->value();
+    player->weapon          = ui->playerWeapon->value();
+    player->shoes           = ui->playerShoes->value();
+    player->accessory1      = ui->playerAccessory1->value();
+    player->accessory2      = ui->playerAccessory2->value();
+    player->attack_power    = ui->playerAttackPower->value();
+    player->defense_power   = ui->playerDefensePower->value();
+    player->hp_max          = ui->playerHpMax->value();
+    player->hp              = ui->playerHp->value();
+    player->mp_max          = ui->playerMpMax->value();
+    player->mp              = ui->playerMp->value();
+    player->body_movement   = ui->playerBodyMovement->value();
+    player->spirit_power    = ui->playerSpiritPower->value();
+    player->lucky_value     = ui->playerLuckyValue->value();
 }
 
 
@@ -363,6 +363,11 @@ void MainWidget::on_propType_currentIndexChanged(int index)
     disconnect(ui->groupEffectChk,      &QCheckBox::clicked,            this, &MainWidget::on_propData_valueChanged);
     disconnect(ui->effectiveRound,      SIGNAL(valueChanged(int)),      this, SLOT(on_propData_valueChanged()));
     disconnect(ui->propDescription,     &QTextEdit::textChanged,        this, &MainWidget::on_propData_valueChanged);
+
+    if(propIndexVecVec[index].isEmpty()) {
+        ui->propIdx->setRange(0, 0);
+        return;
+    }
 
     ui->propIdx->setRange(1, propIndexVecVec[index].size());
     prop_t *prop = reinterpret_cast<prop_t *>(libraryBA.data() + propIndexVecVec[index][ui->propIdx->value() - 1]);
@@ -585,8 +590,8 @@ void MainWidget::on_propData_valueChanged()
     prop->defense_power = toNumber(ui->propDefensePower->value());
 
     prop->body_movement_animation.body_movement = toNumber(ui->propBodyMovement->value());
-    prop->spirit_power_index.spirit_power = toNumber(ui->propSpiritPower->value());
-    prop->lucky_value_unknown.lucky_value = toNumber(ui->propLuckyValue->value());
+    prop->spirit_power_index.spirit_power       = toNumber(ui->propSpiritPower->value());
+    prop->lucky_value_unknown.lucky_value       = toNumber(ui->propLuckyValue->value());
 
     if(ui->player1Chk->isChecked()) {
         prop->who_can_use |= 0x01;
