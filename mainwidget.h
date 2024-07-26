@@ -25,7 +25,7 @@ typedef struct {
     uint8_t     type;
     uint8_t     idx;
     uint8_t     toward;
-    uint8_t     foottep;
+    uint8_t     footstep;
     uint8_t     action;
     uint8_t     pos_x;
     uint8_t     pos_y;
